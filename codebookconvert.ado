@@ -107,16 +107,16 @@ for(i=1; i<=nv; i++ ){
    dum=length(a2[.,1])
    a2_2=J(dum,1,"0")
    a2=a2,a2_2
-   //a2_3="-1","Missing","1"
-   //a2=a2\a2_3
-   //dum=dum+1
+   a2_3="-9999","Missing","1"
+   a2=a2\a2_3
+   dum=dum+1
    a1=J(dum,1,("",st_varname(i))) 
    a=a1,a2
    B=B\a
   }
   else{
-   //b="",st_varname(i),"-1","Missing","1"
-   //B=B\b
+   b="",st_varname(i),"-9999","Missing","1"
+   B=B\b
   }
  }
  return(B)
